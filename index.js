@@ -22,7 +22,7 @@ app.use(bodyParser.json());
 app.use(cors())
 
 app.get('/', (req, res) => {
-    return res.send(<h1>API UPLOAD IMAGE</h1>)
+    res.send('API UPLOAD IMAGE')
 })
 /*** use routes ***/
 app.use('/api/auth', authRoute);
