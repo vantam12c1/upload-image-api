@@ -21,6 +21,9 @@ app.use(bodyParser.urlencoded({
 app.use(bodyParser.json());
 app.use(cors())
 
+app.get('/', (req, res) => {
+    return res.send(<h1>API UPLOAD IMAGE</h1>)
+})
 /*** use routes ***/
 app.use('/api/auth', authRoute);
 app.use('/api/upload', uploadRoute);
